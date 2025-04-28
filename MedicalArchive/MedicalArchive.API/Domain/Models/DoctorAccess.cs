@@ -8,7 +8,7 @@
         public DateTime? ExpiresAt { get; set; }
 
         // Навігаційні властивості
-        public virtual User? User { get; set; }
-        public virtual Doctor? Doctor { get; set; }
+        public required virtual User User { get; set; }
+        public required virtual Doctor Doctor { get; set; }
     }
 }
